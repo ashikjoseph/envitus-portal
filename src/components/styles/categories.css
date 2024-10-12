@@ -1,0 +1,39 @@
+.aqi-category {
+  height: 110px; /* Set a base height for the category card */
+  display: flex; /* Use flexbox for centering content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  color: white; /* Text color */
+  text-align: center; /* Center text within the card */
+  margin: 10px 0; /* Vertical spacing between cards */
+  width: 160px; /* Fixed width for larger screens */
+  padding: 10px; /* Padding for better readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+}
+
+/* Enhanced hover effect for category items */
+.aqi-category:hover {
+  background-color: rgba(255, 255, 255, 0.4); /* Change background on hover for better visibility */
+  cursor: pointer; /* Change cursor to pointer */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/* Responsive styles for tablets and smaller screens */
+@media (max-width: 768px) {
+  .aqi-category {
+      width: 100%; /* Full width on smaller screens */
+      height: 120px; /* Increased height for better visibility */
+      margin: 5px 0; /* Reduce vertical margin */
+      font-size: 1.2em; /* Increase font size for better readability */
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media (max-width: 576px) {
+  .aqi-category {
+      font-size: 0.9em; /* Smaller font size for mobile */
+      padding: 8px; /* Padding adjustment for mobile */
+      height: 100px; /* Reduced height for smaller devices */
+  }
+}

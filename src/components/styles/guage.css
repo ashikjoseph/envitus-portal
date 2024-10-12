@@ -1,0 +1,113 @@
+
+.guage {
+    display: inline-block;
+    height: 120px; 
+    position: relative;
+    width: 240px; 
+}
+
+.gauge-needle {
+    position: absolute;
+    bottom: 25%; /* Adjust this value as needed */
+    left: 50%; /* Center horizontally */
+    width: 2px; /* Width of the needle */
+    height: 45px; /* Height of the needle */
+    background: white; /* Color of the needle */
+    transform-origin: bottom; /* Keep rotation point at the bottom */
+    z-index: 2; /* Ensure it's on top of other elements */
+    transition: transform 0.5s ease; /* Smooth transition for rotation */
+}
+
+.gauge-needle:before {
+    content: '';
+    position: absolute;
+    width: 12px; /* Width of the circular part */
+    height: 12px; /* Height of the circular part */
+    background: white; /* Color of the circular part */
+    border-radius: 50%; /* Make it round */
+    bottom: -6px; /* Adjust to position it at the bottom of the needle */
+    left: -6px; /* Center the circle */
+    z-index: 3; /* Ensure it's above the needle */
+}
+.gauge-needle::after {
+    content: '';
+    position: absolute;
+    width: 10px; /* Adjust width of the arrow */
+    height: 10px; /* Adjust height of the arrow */
+    border-left: 5px solid transparent; /* Create arrow shape */
+    border-right: 5px solid transparent;
+    border-top: 10px solid white; /* Color of the arrow */
+    left: -4px; /* Center the arrow horizontally */
+    top: -10px; /* Position the arrow above the needle */
+    transform: rotate(180deg);
+}
+
+
+
+
+.guage-levels {
+    border-radius: 440px 440px 0 0; 
+    overflow: hidden;
+    background: #1a1a1a;
+    height: 120px; 
+    position: relative;
+}
+
+.guage-levels:before {
+    content: '';
+    height: 180px; 
+    width: 180px; 
+    background-color: #1a1a1a;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: -90px; 
+    z-index: 1;
+}
+
+.guage-level {
+    border-left: 96px solid transparent; 
+    border-right: 96px solid transparent; 
+    display: block;
+    height: 0;
+    margin-left: -96px; 
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transform-origin: 50% 100%;
+}
+
+.guage-level.guage-slice-1 {
+    border-top: 228px solid #239023; 
+    transform: rotate(-90deg); 
+}
+
+.guage-level.guage-slice-2 {
+    border-top: 228px solid #73e600; 
+    transform: rotate(-54deg); 
+}
+
+.guage-level.guage-slice-3 {
+    border-top: 228px solid #ffcc00; 
+    transform: rotate(-20deg); 
+}
+
+.guage-level.guage-slice-4 {
+    border-top: 228px solid #ff9900; 
+    transform: rotate(18deg); 
+}
+
+.guage-level.guage-slice-5 {
+    border-top: 228px solid #ff1a1a; 
+    transform: rotate(60deg); 
+}
+
+.guage-level.guage-slice-6 {
+    border-top: 228px solid #e60000; 
+    transform: rotate(90deg); 
+}
+
+

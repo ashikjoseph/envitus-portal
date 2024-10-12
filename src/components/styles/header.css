@@ -1,0 +1,60 @@
+/* Ensure the topbar is styled properly */
+.topbar {
+  background-color: #1a1a1a;
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+}
+
+/* Center and size the title and date-time on larger screens */
+.date-time {
+  font-size: 18px;
+}
+
+.title-with-arrow {
+  font-size: 28px; /* Increased font size */
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Style the arrow next to the title */
+.down-arrow {
+  margin-right: 10px;
+  font-size: 20px; /* Increased arrow size */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .date-time {
+    font-size: 16px;
+  }
+
+  .title-with-arrow {
+    font-size: 26px; /* Slightly smaller size for medium screens */
+  }
+
+  .down-arrow {
+    font-size: 18px; /* Decrease arrow size for medium screens */
+  }
+}
+
+/* For very small screens (e.g., mobile) */
+@media (max-width: 576px) {
+  .date-time {
+    font-size: 14px;
+  }
+
+  .title-with-arrow {
+    font-size: 24px; /* Smaller size for mobile screens */
+    flex-direction: column;
+  }
+
+  .down-arrow {
+    margin-right: 0;
+    font-size: 16px; /* Decrease arrow size for mobile */
+    margin-bottom: 5px;
+  }
+}

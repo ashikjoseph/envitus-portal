@@ -1,0 +1,103 @@
+.card {
+  background-color: #333; 
+  color: white;
+  height: 300px; /* Set height of the card */
+}
+
+.map-container {
+  height: 300px; /* Set height equal to other cards */
+}
+
+.card-body {
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Equal vertical spacing */
+  height: 100%; /* Fill the card height */
+  text-align: left; /* Align text to the left */
+  padding: 15px; /* Add padding for better spacing */
+}
+
+.card-title {
+  margin-bottom: 20px; /* Add space between the heading and device information */
+}
+
+.device-info {
+  flex-grow: 1; /* Allow this section to grow to fill available space */
+}
+
+/* Increased margin for child divs for more spacing */
+.device-info > div {
+  margin-bottom: 20px; /* Increased margin for more spacing between items */
+}
+
+.card-label {
+  font-size: 20px; /* Font size for labels */
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  /* Adjust styles for tablets */
+  .card-body {
+    font-size: 16px; /* Reduce font size for smaller screens */
+    padding: 10px; /* Reduce padding for a compact view */
+  }
+
+  .card-label {
+    font-size: 18px; /* Adjust label font size */
+  }
+
+  .card-title {
+    font-size: 20px; /* Reduce heading font size */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller tablets */
+  .card {
+    height: auto; /* Allow cards to adjust height */
+  }
+
+  .card-body {
+    font-size: 14px; /* Further reduce font size for smaller screens */
+    padding: 8px; /* Add padding for better spacing */
+  }
+
+  .card-title {
+    font-size: 18px; /* Reduce heading size */
+    margin-bottom: 15px; /* Adjust space below heading for smaller tablets */
+  }
+
+  .card-label {
+    font-size: 16px; /* Smaller label font size for tablets */
+  }
+
+  .device-info > div {
+    margin-bottom: 15px; /* Adjust spacing between items for smaller tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for mobile devices */
+  .map-container, .card {
+    height: auto; /* Allow cards to adjust height on small screens */
+  }
+
+  .card-body {
+    font-size: 12px; /* Reduce font size for small screens */
+    padding: 5px; /* Add padding inside the card for better spacing */
+  }
+
+  .card-title {
+    font-size: 16px; /* Reduce heading size */
+    margin-bottom: 12px; /* Adjust space below heading for mobile */
+  }
+
+  .card-label {
+    font-size: 14px; /* Smaller label font size for mobile */
+    margin-top: 10px; /* Adjust the margin between labels */
+  }
+
+  .device-info > div {
+    margin-bottom: 12px; /* Further adjust spacing for mobile */
+  }
+}

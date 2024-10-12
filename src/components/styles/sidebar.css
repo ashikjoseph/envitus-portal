@@ -1,0 +1,80 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start;
+  height: auto; /* Allow the height to adjust based on content */
+  margin: 0; /* Reset margin */
+  padding: 10px; /* Add some padding for aesthetics */
+  width: 180px; /* Set width of the sidebar */
+  background-color: #1a1a1a; /* Optional: background color for the sidebar */
+  overflow: hidden; /* Hide scrollbar */
+}
+
+.sidebar-icon {
+  width: 80px; 
+  height: 80px; 
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+  width: 100%; 
+}
+
+.sidebar-link {
+  font-size: 24px; /* Font size */
+  font-weight: 400; /* Reduced thickness */
+  color: white;
+  text-decoration: none;
+  margin-bottom: 10px; /* Reduced margin to move items closer together */
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition for hover effect */
+  padding: 10px; /* Added padding for better clickable area */
+  width: 100%; /* Full width to ensure alignment */
+  text-align: left; /* Align text to the left */
+}
+
+.green-link {
+  color: green;
+}
+
+.sidebar-link:hover {
+  color: #00ff00; 
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .sidebar {
+      width: 150px; /* Adjust width for smaller screens */
+  }
+
+  .sidebar-icon {
+      width: 60px; 
+      height: 60px; 
+      margin-bottom: 15px;
+  }
+
+  .sidebar-link {
+      font-size: 18px; 
+      margin-bottom: 5px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+      width: 120px; /* Further reduce width for mobile */
+  }
+
+  .sidebar-link {
+      font-size: 16px; 
+      margin-bottom: 5px; 
+  }
+
+  .sidebar-icon {
+      width: 50px; 
+      height: 50px; 
+  }
+}

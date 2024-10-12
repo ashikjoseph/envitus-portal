@@ -1,0 +1,129 @@
+/* Full height and width for the body to ensure background color covers everything */
+body {
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #1a1a1a; /* Set background color */
+}
+
+/* Dashboard container styles */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure it fills the viewport height */
+  background-color: #1a1a1a; /* Set background color */
+  width: 100%; /* Full width */
+  padding: 0; /* Remove padding */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Styles for the header */
+.header {
+  background-color: #333; /* Header background color */
+  color: white; /* Text color */
+  padding: 15px; /* Padding for header */
+  text-align: center; /* Center text */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Sidebar styles */
+.sidebar {
+  background-color: #222; /* Sidebar background color */
+  color: white; /* Text color */
+  height: calc(100vh - 45px); /* Full height minus footer height */
+  padding: 10px; /* Padding */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+/* Card and category styles */
+.card {
+  background-color: #333; 
+  color: white;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin-bottom: 20px; /* Margin between cards */
+  width: 100%; /* Full width to fit column */
+}
+
+.category {
+  border-radius: 8px; /* Match card border radius */
+  padding: 10px; /* Padding */
+  margin-bottom: 15px; /* Margin between categories */
+  width: 100%; /* Full width to fit column */
+}
+
+/* Footer or bottom element */
+.bg-black {
+  background-color: black; /* Footer background */
+  height: 45px; /* Footer height */
+  width: 100%; /* Full width for footer */
+  margin-bottom: 0; /* Set margin bottom to 0 */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .dashboard-container {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+  }
+
+  .sidebar {
+    width: 100%; /* Full width for sidebar */
+    padding: 5px; /* Reduced padding */
+  }
+
+  .header {
+    font-size: 20px; /* Smaller font size */
+  }
+
+  .card, .category {
+    margin: 10px 0; /* Add margin for better spacing on mobile */
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    font-size: 18px; /* Smaller font size */
+  }
+
+  .card {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .category {
+    padding: 12px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 5px; /* Further reduced padding */
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .header {
+    font-size: 16px; /* Smaller font size */
+  }
+
+  .card, .category {
+    padding: 12px; /* Adjust padding */
+  }
+
+  .bg-black {
+    height: 40px; /* Adjust footer height */
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .card, .category {
+    font-size: 12px; /* Adjust font size */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .bg-black {
+    height: 35px; /* Adjust footer height for small screens */
+  }
+}
