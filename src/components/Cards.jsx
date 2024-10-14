@@ -1,10 +1,10 @@
 import React from 'react';
-import '../components/styles/cards.css'; // Ensure this path is correct
+import '../components/styles/cards.css'; 
 import { Col, Row } from 'react-bootstrap';
 import Guage from './Guage';
 
 function Cards() {
-    const value = 120;
+    const value = 124;
 
     return (
         <Row className="mt-3">

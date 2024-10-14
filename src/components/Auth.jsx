@@ -25,38 +25,38 @@ function Auth() {
 
   return (
     <div className="d-flex justify-content-center align-items-center" style={{ width: '100%', minHeight: '100vh', background: 'linear-gradient(to bottom right, green, yellow)' }}>
-      <div className="card auth-card" style={{ width: '100%', maxWidth: '700px', minHeight: '700px', padding: '30px', marginTop: '120px', marginBottom: '120px', backgroundColor: 'white', paddingRight:"120px" }}>
+      <div className="card auth-card" style={{ width: '100%', maxWidth: '700px', minHeight: '750px', padding: '30px', marginTop: '120px', marginBottom: '120px', backgroundColor: 'white', paddingRight:"120px" }}>
         <div className="p-4">
 
           <div className="mb-4" style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
             <img src={authImage} alt="Authentication Icon" className="img-fluid" />
             <h2 className="mt-3" style={{color:"black"}}>Log in</h2>
-            <p style={{color:"black"}}>
+            <p style={{color:"#666666", fontSize:"14px", fontWeight: 500}}>
               By logging into this platform, you confirm that you accept and agree to abide by our Terms and Conditions and Privacy Policy.
             </p>
           </div>
 
           <div className="d-flex row" style={{ padding: '12px' }}>
-            <Button variant="dark" className="justify-content-center col " style={{ width: '100%', padding: '10px', borderRadius: '15px', marginBottom: '10px', marginRight: '10px' }}>
-              <label htmlFor="" style={{ fontSize: '19px' }}>Demo user: demouser1</label>
+            <Button variant="dark" className="justify-content-center col " style={{ width: '100%', padding: '8px', borderRadius: '15px', marginBottom: '10px', marginRight: '10px' }}>
+              <label htmlFor="" style={{ fontSize: '19px', fontWeight:500 }}>Demo user: demouser1</label>
             </Button>
-            <Button variant="dark" className="justify-content-center col" style={{ width: '100%', padding: '10px', borderRadius: '15px', marginBottom: '10px' }}>
-              <label htmlFor="" style={{ fontSize: '19px' }}>Password: D@mo!24#</label>
+            <Button variant="dark" className="justify-content-center col" style={{ width: '100%', padding: '8px', borderRadius: '15px', marginBottom: '10px' }}>
+              <label htmlFor="" style={{ fontSize: '19px', fontWeight:500 }}>Password: D@mo!24#</label>
             </Button>
           </div>
 
           <Form>
             <Form.Group controlId="email" className="mb-3">
-              <Form.Label>Username</Form.Label>
+              <Form.Label style={{color:"#666666"}}>Username</Form.Label>
               <Form.Control type="text" defaultValue="demouser1"
-                 style={{backgroundColor:"lightgray"}} />
+                 style={{backgroundColor:"#f2f2f2", height:"55px", fontSize:"20px", padding: '10px'}} />
             </Form.Group>
             <Form.Group controlId="password" className="mb-3 position-relative" >
-              <Form.Label>Password</Form.Label>
+              <Form.Label style={{color:"#666666"}}>Password</Form.Label>
               <Form.Control
                 type={showPassword ? 'text' : 'password'}
                 defaultValue="D@mo!24#"
-                style={{backgroundColor:"lightgray"}}
+                style={{backgroundColor:"#f2f2f2", height:"55px", fontSize:"20px", padding: '10px'}}
               />
               <i
                 className={showPassword ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'}
@@ -66,8 +66,8 @@ function Auth() {
               />
             </Form.Group>
             <div className="text-center mt-4">
-              <Button variant="dark" className="rounded" style={{ width: '100%', padding: '10px' }} onClick={handleLogin}>
-                Login
+              <Button variant="dark" className="rounded" style={{ width: '100%', padding: '5px',height:"50px", fontSize:"24px", fontWeight:500 }} onClick={handleLogin}>
+                Log in
               </Button>
             </div>
             <div className="mt-3">

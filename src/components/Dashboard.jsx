@@ -17,13 +17,15 @@ function Dashboard() {
           <div className="p-3">
             <Header />
           </div>
-          <Row className="mt-4">
+          <Row className="mt-4 justify-content-center justify-content-md-start">
             <Cards />
           </Row>
-          <Row className="mt-4">
+          <Row className="mt-4 justify-content-center justify-content-md-start">
             <Categories />
           </Row>
+          <Row style={{marginTop:"95px"}}>
           <div className="bg-black mt-3" style={{ height: '45px', width: '100%'}} />
+          </Row>
         </Col>
       </Row>
     </div>

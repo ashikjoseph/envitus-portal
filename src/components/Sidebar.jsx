@@ -1,6 +1,7 @@
 import React from 'react';
 import authImage from '../Assets/icon-removebg-preview.png';
 import '../components/styles/sidebar.css';
+import { Link } from 'react-router-dom';
 
 function Sidebar() {
   return (
@@ -16,7 +17,7 @@ function Sidebar() {
         <li className="sidebar-link">API & Keys</li>
         <li className="sidebar-link">Alarms</li>
         <li className="sidebar-link">Remote Diagnostics</li>
-        <li className="sidebar-link">Log Out</li>
+        <Link to="/" style={{ textDecoration: "none" }}><li className="sidebar-link">Log Out</li></Link>
       </ul>
     </div>
   );

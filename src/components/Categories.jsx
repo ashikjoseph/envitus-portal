@@ -1,11 +1,11 @@
 import React from 'react';
-import "../components/styles/categories.css"; // Ensure this path is correct
+import "../components/styles/categories.css"; 
 import { Col, Row } from 'react-bootstrap';
 
 function Categories() {
   return (
     <>
-      <Row style={{ marginTop: "35px" }}>
+      <Row style={{ marginTop: "50px" }}>
         <Col xs={12}>
           <h3 style={{ color: "white", textAlign: "center", fontWeight: "bold" }}>AQI Categories</h3>
         </Col>

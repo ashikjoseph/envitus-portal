@@ -1,4 +1,4 @@
-/* Ensure the topbar is styled properly */
+
 .topbar {
   background-color: #1a1a1a;
   padding: 10px 0;
@@ -6,13 +6,13 @@
   color: white;
 }
 
-/* Center and size the title and date-time on larger screens */
+
 .date-time {
   font-size: 18px;
 }
 
 .title-with-arrow {
-  font-size: 28px; /* Increased font size */
+  font-size: 28px; 
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -20,41 +20,46 @@
   text-align: center;
 }
 
-/* Style the arrow next to the title */
-.down-arrow {
-  margin-right: 10px;
-  font-size: 20px; /* Increased arrow size */
+.down-arrow::after {
+  display: none !important; 
 }
 
-/* Adjustments for smaller screens */
+.down-arrow {
+  font-size: 20px; 
+  cursor: pointer;
+  color: #00b300;
+  margin-right: 10px;
+}
+
+
 @media (max-width: 768px) {
   .date-time {
     font-size: 16px;
   }
 
   .title-with-arrow {
-    font-size: 26px; /* Slightly smaller size for medium screens */
+    font-size: 26px; 
   }
 
   .down-arrow {
-    font-size: 18px; /* Decrease arrow size for medium screens */
+    font-size: 18px; 
   }
 }
 
-/* For very small screens (e.g., mobile) */
+
 @media (max-width: 576px) {
   .date-time {
     font-size: 14px;
   }
 
   .title-with-arrow {
-    font-size: 24px; /* Smaller size for mobile screens */
+    font-size: 24px; 
     flex-direction: column;
   }
 
   .down-arrow {
     margin-right: 0;
-    font-size: 16px; /* Decrease arrow size for mobile */
+    font-size: 16px; 
     margin-bottom: 5px;
   }
 }

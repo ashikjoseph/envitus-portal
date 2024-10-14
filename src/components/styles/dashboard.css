@@ -1,129 +1,129 @@
-/* Full height and width for the body to ensure background color covers everything */
+
 body {
-  margin: 0; /* Remove default margin */
-  height: 100vh; /* Full height of the viewport */
-  background-color: #1a1a1a; /* Set background color */
+  margin: 0; 
+  height: 100vh; 
+  background-color: #1a1a1a; 
 }
 
-/* Dashboard container styles */
+
 .dashboard-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure it fills the viewport height */
-  background-color: #1a1a1a; /* Set background color */
-  width: 100%; /* Full width */
-  padding: 0; /* Remove padding */
-  box-sizing: border-box; /* Include padding in width */
+  min-height: 100vh; 
+  background-color: #1a1a1a; 
+  width: 100%; 
+  padding: 0; 
+  box-sizing: border-box; 
 }
 
-/* Styles for the header */
+
 .header {
-  background-color: #333; /* Header background color */
-  color: white; /* Text color */
-  padding: 15px; /* Padding for header */
-  text-align: center; /* Center text */
-  width: 100%; /* Full width */
-  box-sizing: border-box; /* Include padding in width */
+  background-color: #333; 
+  color: white; 
+  padding: 15px; 
+  text-align: center;
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
-/* Sidebar styles */
+
 .sidebar {
-  background-color: #222; /* Sidebar background color */
-  color: white; /* Text color */
-  height: calc(100vh - 45px); /* Full height minus footer height */
-  padding: 10px; /* Padding */
-  overflow-y: auto; /* Enable scrolling if content overflows */
+  background-color: #222; 
+  color: white; 
+  height: calc(100vh - 45px); 
+  padding: 10px; 
+  overflow-y: auto; 
 }
 
-/* Card and category styles */
+
 .card {
   background-color: #333; 
   color: white;
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-  margin-bottom: 20px; /* Margin between cards */
-  width: 100%; /* Full width to fit column */
+  border-radius: 8px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  margin-bottom: 20px; 
+  width: 100%; 
 }
 
 .category {
-  border-radius: 8px; /* Match card border radius */
-  padding: 10px; /* Padding */
-  margin-bottom: 15px; /* Margin between categories */
-  width: 100%; /* Full width to fit column */
+  border-radius: 8px; 
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%; 
 }
 
-/* Footer or bottom element */
+
 .bg-black {
-  background-color: black; /* Footer background */
-  height: 45px; /* Footer height */
-  width: 100%; /* Full width for footer */
-  margin-bottom: 0; /* Set margin bottom to 0 */
+  background-color: black; 
+  height: 45px; 
+  width: 100%; 
+  margin-bottom: 0; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 1200px) {
   .dashboard-container {
-    flex-direction: column; /* Stack elements vertically on smaller screens */
+    flex-direction: column; 
   }
 
   .sidebar {
-    width: 100%; /* Full width for sidebar */
-    padding: 5px; /* Reduced padding */
+    width: 100%; 
+    padding: 5px; 
   }
 
   .header {
-    font-size: 20px; /* Smaller font size */
+    font-size: 20px; 
   }
 
   .card, .category {
-    margin: 10px 0; /* Add margin for better spacing on mobile */
+    margin: 10px 0; 
   }
 }
 
 @media (max-width: 992px) {
   .header {
-    font-size: 18px; /* Smaller font size */
+    font-size: 18px; 
   }
 
   .card {
-    padding: 15px; /* Adjust padding */
+    padding: 15px; 
   }
 
   .category {
-    padding: 12px; /* Adjust padding */
+    padding: 12px; 
   }
 }
 
 @media (max-width: 768px) {
   .sidebar {
-    padding: 5px; /* Further reduced padding */
-    font-size: 16px; /* Smaller font size */
+    padding: 5px; 
+    font-size: 16px; 
   }
 
   .header {
-    font-size: 16px; /* Smaller font size */
+    font-size: 16px;
   }
 
   .card, .category {
-    padding: 12px; /* Adjust padding */
+    padding: 12px; 
   }
 
   .bg-black {
-    height: 40px; /* Adjust footer height */
+    height: 40px; 
   }
 }
 
 @media (max-width: 576px) {
   .header {
-    font-size: 14px; /* Smaller font size */
+    font-size: 14px; 
   }
 
   .card, .category {
-    font-size: 12px; /* Adjust font size */
-    padding: 8px; /* Adjust padding */
+    font-size: 12px; 
+    padding: 8px; 
   }
 
   .bg-black {
-    height: 35px; /* Adjust footer height for small screens */
+    height: 35px; 
   }
 }

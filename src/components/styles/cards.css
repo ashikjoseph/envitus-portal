@@ -1,103 +1,103 @@
 .card {
   background-color: #333; 
   color: white;
-  height: 300px; /* Set height of the card */
+  height: 300px; 
 }
 
 .map-container {
-  height: 300px; /* Set height equal to other cards */
+  height: 300px; 
 }
 
 .card-body {
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Stack children vertically */
-  justify-content: space-between; /* Equal vertical spacing */
-  height: 100%; /* Fill the card height */
-  text-align: left; /* Align text to the left */
-  padding: 15px; /* Add padding for better spacing */
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%; 
+  text-align: left; 
+  padding: 15px; 
 }
 
 .card-title {
-  margin-bottom: 20px; /* Add space between the heading and device information */
+  margin-bottom: 20px; 
 }
 
 .device-info {
-  flex-grow: 1; /* Allow this section to grow to fill available space */
+  flex-grow: 1; 
 }
 
-/* Increased margin for child divs for more spacing */
+
 .device-info > div {
-  margin-bottom: 20px; /* Increased margin for more spacing between items */
+  margin-bottom: 20px; 
 }
 
 .card-label {
-  font-size: 20px; /* Font size for labels */
+  font-size: 20px; 
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 992px) {
-  /* Adjust styles for tablets */
+  
   .card-body {
-    font-size: 16px; /* Reduce font size for smaller screens */
-    padding: 10px; /* Reduce padding for a compact view */
+    font-size: 16px; 
+    padding: 10px; 
   }
 
   .card-label {
-    font-size: 18px; /* Adjust label font size */
+    font-size: 18px; 
   }
 
   .card-title {
-    font-size: 20px; /* Reduce heading font size */
+    font-size: 20px; 
   }
 }
 
 @media (max-width: 768px) {
-  /* Adjust styles for smaller tablets */
+ 
   .card {
-    height: auto; /* Allow cards to adjust height */
+    height: auto; 
   }
 
   .card-body {
-    font-size: 14px; /* Further reduce font size for smaller screens */
-    padding: 8px; /* Add padding for better spacing */
+    font-size: 14px; 
+    padding: 8px; 
   }
 
   .card-title {
-    font-size: 18px; /* Reduce heading size */
-    margin-bottom: 15px; /* Adjust space below heading for smaller tablets */
+    font-size: 18px; 
+    margin-bottom: 15px; 
   }
 
   .card-label {
-    font-size: 16px; /* Smaller label font size for tablets */
+    font-size: 16px; 
   }
 
   .device-info > div {
-    margin-bottom: 15px; /* Adjust spacing between items for smaller tablets */
+    margin-bottom: 15px; 
   }
 }
 
 @media (max-width: 576px) {
-  /* Adjust styles for mobile devices */
+  
   .map-container, .card {
-    height: auto; /* Allow cards to adjust height on small screens */
+    height: auto; 
   }
 
   .card-body {
-    font-size: 12px; /* Reduce font size for small screens */
-    padding: 5px; /* Add padding inside the card for better spacing */
+    font-size: 12px; 
+    padding: 5px; 
   }
 
   .card-title {
-    font-size: 16px; /* Reduce heading size */
-    margin-bottom: 12px; /* Adjust space below heading for mobile */
+    font-size: 16px; 
+    margin-bottom: 12px; 
   }
 
   .card-label {
-    font-size: 14px; /* Smaller label font size for mobile */
-    margin-top: 10px; /* Adjust the margin between labels */
+    font-size: 14px; 
+    margin-top: 10px; 
   }
 
   .device-info > div {
-    margin-bottom: 12px; /* Further adjust spacing for mobile */
+    margin-bottom: 12px; 
   }
 }

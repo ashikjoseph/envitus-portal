@@ -4,7 +4,6 @@ function Guage({ value }) {
     const angleOffset = 10;
     const angle = (value * (180 / 500)) - 90 + angleOffset;
 
-    // Determine the label based on the value
     const label = value <= 50 ? "Good" :
         value <= 100 ? "Satisfactory" :
             value <= 200 ? "Moderate" :
@@ -20,10 +19,11 @@ function Guage({ value }) {
                 left: "50%",
                 bottom: "45%",
                 transform: "translateX(-50%)",
-                fontSize: "20px",
+                fontSize: "25px",
                 zIndex: 3,
                 padding: "2px 5px",
                 borderRadius: "5px",
+                fontWeight:"bold"
             }}>
                 {value}
             </label>
