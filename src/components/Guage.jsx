@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import "../components/styles/guage.css";
+
 function Guage({ value }) {
     const angleOffset = 10;
     const angle = (value * (180 / 500)) - 90 + angleOffset;
@@ -9,10 +10,14 @@ function Guage({ value }) {
             value <= 200 ? "Moderate" :
                 value <= 300 ? "Poor" :
                     value <= 400 ? "Very Poor" : "Severe";
+
     return (
         <div className="guage">
             <div className="gauge-needle" style={{ transform: `translate(-50%, 26px) rotate(${angle}deg)` }} />
-
+            <div className="arc-circle" />
+            <div className="arc-circle-right" />
+            <div className="gauge-circle" />
+            <div className="large-circle" />
             <label htmlFor="" style={{
                 color: "white",
                 position: "absolute",
@@ -23,7 +28,7 @@ function Guage({ value }) {
                 zIndex: 3,
                 padding: "2px 5px",
                 borderRadius: "5px",
-                fontWeight:"bold"
+                fontWeight: "bold"
             }}>
                 {value}
             </label>
@@ -35,7 +40,6 @@ function Guage({ value }) {
                 <span className="guage-level guage-slice-4"></span>
                 <span className="guage-level guage-slice-5"></span>
                 <span className="guage-level guage-slice-6"></span>
-                <label htmlFor="" style={{ color: "white" }}>{value}</label>
             </div>
 
             <div style={{ marginTop: "60px", width: "100%" }}>
@@ -47,7 +51,7 @@ function Guage({ value }) {
                 </label>
             </div>
         </div>
-    )
+    );
 }
 
-export default Guage
+export default Guage;
