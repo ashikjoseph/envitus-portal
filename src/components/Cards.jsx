@@ -1,7 +1,7 @@
 import React from 'react';
-import '../components/styles/cards.css'; 
+import '../components/styles/cards.css';
 import { Col, Row } from 'react-bootstrap';
-import Guage from './Guage';
+import Dial from './Dial';
 
 function Cards() {
     const value = 124;
@@ -45,7 +45,7 @@ function Cards() {
             </Col>
 
             <Col xs={12} md={4} style={{ marginTop: '20px' }}>
-            <Guage value={value}/>
+                <Dial value={value} />
             </Col>
         </Row>
     );
