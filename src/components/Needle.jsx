@@ -29,11 +29,14 @@ function Needle({ value }) {
             </div>
             
             <svg className="needle-svg" viewBox="0 0 60 80">
-                <path
-                    d="M 30 0 Q 25 30, 5 70 Q 30 50, 55 70 Q 35 30, 30 0"
-                    fill="#cccccc"
-                />
-            </svg>
+    <path
+        d="M 30 0 Q 26 31, 7 70 Q 30 51, 53 70 Q 34 31, 30 0"
+        fill="#cccccc"
+    />
+</svg>
+
+
+
 
             <div className="top-circle"></div>
             <div className="end-circle"></div>
