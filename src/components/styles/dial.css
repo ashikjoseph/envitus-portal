@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     position: relative; 
-    overflow: visible; /* Prevent the details section from being hidden */
+    overflow: visible; 
 }
 
 .dial::after {
@@ -45,21 +45,21 @@
 
 .gauge-label {
     position: absolute;
-    top: 105px; /* Position the label between the top and bottom */
+    top: 105px; 
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the label */
-    font-size: 30px; /* Adjust font size */
-    color: #ffffff; /* Text color */
-    background-color: #1a1a1a; /* Optional background for contrast */
-    padding: 2px 5px; /* Optional padding for better appearance */
-    border-radius: 3px; /* Optional rounded corners */
-    z-index: 2; /* Ensure the label is between the needle and the gauge */
+    transform: translate(-50%, -50%); 
+    font-size: 30px; 
+    color: #ffffff; 
+    background-color: #1a1a1a; 
+    padding: 2px 5px;
+    border-radius: 3px; 
+    z-index: 2; 
     font-weight: bold;
 }
 
 .details {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column; 
     justify-content: center;
     z-index: 4; 
     margin: -60px auto; 
@@ -70,52 +70,52 @@
     margin-right: 45px;
 }
 
-/* Up to 1200px (small laptops) */
+
 @media (max-width: 1200px) {
     .details {
-        font-size: 20px; /* Maintain font size */
-        width: 80%; /* Adjust width as needed */
+        font-size: 20px; 
+        width: 80%; 
     }
 }
 
-/* Up to 992px (tablets) */
+
 @media (max-width: 992px) {
     .details {
-        font-size: 18px; /* Maintain font size */
-        width: 80%; /* Adjust width as needed */
+        font-size: 18px; 
+        width: 80%; 
     }
 }
 
-/* Up to 768px (tablets in portrait orientation) */
+
 @media (max-width: 768px) {
     .details {
-        font-size: 16px; /* Maintain font size */
-        width: 90%; /* Adjust width as needed */
-        margin: -40px auto; /* Center alignment */
+        font-size: 16px; 
+        width: 90%; 
+        margin: -40px auto; 
     }
 }
 
-/* Up to 576px (mobile devices) */
+
 @media (max-width: 576px) {
     .details {
-        font-size: 14px; /* Maintain font size */
-        width: 95%; /* Adjust width as needed */
+        font-size: 14px; 
+        width: 95%; 
     }
 }
 
-/* Up to 480px (smaller mobile devices) */
+
 @media (max-width: 480px) {
     .details {
-        font-size: 12px; /* Maintain font size */
-        width: 95%; /* Adjust width as needed */
+        font-size: 12px; 
+        width: 95%; 
     }
 }
 
-/* Up to 360px (very small devices) */
+
 @media (max-width: 360px) {
     .details {
-        font-size: 10px; /* Maintain font size */
-        width: 95%; /* Adjust width as needed */
+        font-size: 10px; 
+        width: 95%; 
     }
 }
 

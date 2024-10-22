@@ -6,17 +6,17 @@ function Needle({ value }) {
     let angle = 0;
 
     if (value >= 0 && value <= 50) {
-        angle = 270 + ((value - 1) / 49) * 30; // 270 to 300 degrees
+        angle = 270 + ((value - 1) / 49) * 30;
     } else if (value >= 51 && value <= 100) {
-        angle = 300 + ((value - 51) / 49) * 30; // 300 to 330 degrees
+        angle = 300 + ((value - 51) / 49) * 30;
     } else if (value >= 101 && value <= 200) {
-        angle = 330 + ((value - 101) / 100) * 30; // 330 to 360 degrees
+        angle = 330 + ((value - 101) / 100) * 30;
     } else if (value >= 201 && value <= 300) {
-        angle = ((value - 201) / 99) * 30; // 0 to 30 degrees
+        angle = ((value - 201) / 99) * 30;
     } else if (value >= 301 && value <= 400) {
-        angle = 30 + ((value - 301) / 99) * 30; // 30 to 60 degrees
+        angle = 30 + ((value - 301) / 99) * 30;
     } else if (value >= 401 && value <= 500) {
-        angle = 60 + ((value - 401) / 99) * 30; // 60 to 90 degrees
+        angle = 60 + ((value - 401) / 99) * 30;
     }
 
     angle += 7;
@@ -27,8 +27,7 @@ function Needle({ value }) {
             <div className="needle-base">
                 <div className="inner-circle"></div>
             </div>
-
-            {/* SVG path with increased width and inward curve */}
+            
             <svg className="needle-svg" viewBox="0 0 60 80">
                 <path
                     d="M 30 0 Q 25 30, 5 70 Q 30 50, 55 70 Q 35 30, 30 0"
@@ -37,12 +36,11 @@ function Needle({ value }) {
             </svg>
 
             <div className="top-circle"></div>
-
-            {/* New small circle at the end of the needle */}
             <div className="end-circle"></div>
             <div className="endtop-circle"></div>
+            <div className="middle-back-circle"></div>
+            <div className="middle-circle"></div>
             <div className="endbottom-circle"></div>
-            
         </div>
     );
 }
