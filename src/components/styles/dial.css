@@ -1,0 +1,123 @@
+.dial {
+    width: 310px;
+    height: 270px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #ff9900 0deg, #ff9900 30deg,   
+        #ff1a1a 30deg, #ff1a1a 60deg,
+        #e60000 60deg, #e60000 90deg, 
+        #239023 270deg, #239023 300deg, 
+        #73e600 300deg, #73e600 330deg,   
+        #ffcc00 330deg, #ffcc00 360deg 
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    overflow: visible; 
+}
+
+.dial::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    background-color: #1a1a1a; 
+    z-index: 2; 
+}
+
+.inner-offset {
+    width: 65%; 
+    height: 65%; 
+    border-radius: 50%;
+    background-color: #1a1a1a; 
+    position: absolute; 
+    top: 17.5%; 
+    left: 17.5%; 
+    z-index: 1;
+}
+
+.needle {
+    position: absolute;
+    z-index: 3; 
+}
+
+.gauge-label {
+    position: absolute;
+    top: 105px; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 30px; 
+    color: #ffffff; 
+    background-color: #1a1a1a; 
+    padding: 2px 5px;
+    border-radius: 3px; 
+    z-index: 2; 
+    font-weight: bold;
+}
+
+.details {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    z-index: 4; 
+    margin: -60px auto; 
+    position: relative; 
+    color: white; 
+    width: fit-content; 
+    text-align: center;
+    margin-right: 45px;
+}
+
+
+@media (max-width: 1200px) {
+    .details {
+        font-size: 20px; 
+        width: 80%; 
+    }
+}
+
+
+@media (max-width: 992px) {
+    .details {
+        font-size: 18px; 
+        width: 80%; 
+    }
+}
+
+
+@media (max-width: 768px) {
+    .details {
+        font-size: 16px; 
+        width: 90%; 
+        margin: -40px auto; 
+    }
+}
+
+
+@media (max-width: 576px) {
+    .details {
+        font-size: 14px; 
+        width: 95%; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .details {
+        font-size: 12px; 
+        width: 95%; 
+    }
+}
+
+
+@media (max-width: 360px) {
+    .details {
+        font-size: 10px; 
+        width: 95%; 
+    }
+}
+
+
+

@@ -1,0 +1,157 @@
+
+
+
+@media (max-width: 575px) {
+  .auth-card {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .auth-card h2 {
+    font-size: 24px;
+  }
+
+  .auth-card p {
+    font-size: 14px;
+  }
+
+  .auth-card .form-label {
+    font-size: 16px;
+  }
+
+  .auth-card .btn {
+    font-size: 16px;
+  }
+
+  .auth-card img {
+    max-width: 60px;
+  }
+
+  .auth-card .toggle-password-icon {
+    right: 15px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .auth-card {
+    padding: 25px;
+  }
+
+  .auth-card h2 {
+    font-size: 28px;
+  }
+
+  .auth-card p {
+    font-size: 16px;
+  }
+
+  .auth-card .form-label {
+    font-size: 18px;
+  }
+
+  .auth-card .btn {
+    font-size: 18px;
+  }
+
+  .auth-card img {
+    max-width: 70px;
+  }
+
+  .auth-card .toggle-password-icon {
+    right: 10px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .auth-card {
+    padding: 25px;
+  }
+
+  .auth-card h2 {
+    font-size: 28px;
+  }
+
+  .auth-card p {
+    font-size: 16px;
+  }
+
+  .auth-card .form-label {
+    font-size: 18px;
+  }
+
+  .auth-card .btn {
+    font-size: 18px;
+  }
+
+  .auth-card img {
+    max-width: 70px;
+  }
+
+  .auth-card .toggle-password-icon {
+    right: 10px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .auth-card {
+    max-width: 700px;
+  }
+
+  .auth-card h2 {
+    font-size: 32px;
+  }
+
+  .auth-card p {
+    font-size: 18px;
+  }
+
+  .auth-card .form-label {
+    font-size: 20px;
+  }
+
+  .auth-card .btn {
+    font-size: 24px;
+  }
+
+  .auth-card img {
+    max-width: 80px;
+  }
+
+  .auth-card .toggle-password-icon {
+    right: 10px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .auth-card {
+    max-width: 700px;
+  }
+
+  .auth-card h2 {
+    font-size: 32px;
+  }
+
+  .auth-card p {
+    font-size: 18px;
+  }
+
+  .auth-card .form-label {
+    font-size: 20px;
+  }
+
+  .auth-card .btn {
+    font-size: 24px;
+  }
+
+  .auth-card img {
+    max-width: 80px;
+  }
+
+  .auth-card .toggle-password-icon {
+    right: 10px;
+  }
+}

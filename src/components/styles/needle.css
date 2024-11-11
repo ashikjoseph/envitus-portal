@@ -1,0 +1,102 @@
+.needle {
+    width: 3px;  
+    height: 30px; 
+    border-radius: 2px; 
+    position: absolute; 
+    bottom: 35%; 
+    left: calc(50% - 1.5px);
+    transform: translate(-50%, 0); 
+    transform-origin: bottom; 
+    transition: transform 0.3s; 
+}
+
+
+.needle-base {
+    width: 33px;  
+    height: 33px; 
+    background-color: #cccccc; 
+    border-radius: 50%; 
+    position: absolute;
+    bottom: -15px; 
+    left: 50%; 
+    transform: translate(-50%, 0); 
+}
+
+.inner-circle {
+    width: 16px;  
+    height: 16px; 
+    background-color: #333; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.needle-svg {
+    position: absolute;
+    left: 50%;
+    bottom: 5px; 
+    width: 48px;  
+    height: 43px; 
+    transform: translate(-50%, 0); 
+}
+
+.end-circle {
+    width: 1.4px;   
+    height: 1.4px;  
+    background-color: #cccccc; 
+    border-radius: 50%; 
+    position: absolute;
+    bottom: 40px; 
+    left: 1.5px;    
+    transform: translate(-50%, -50%);
+}
+
+
+.endtop-circle {
+    width: 3px; 
+    height: 3px; 
+    background-color: #1a1a1a; 
+    border-radius: 50%;
+    position: absolute;
+    left: 0.2px; 
+    transform: translate(-50%, -50%);
+    bottom: 40.28px; 
+}
+
+.endbottom-circle {
+    width: 3px; 
+    height: 3px; 
+    background-color: #1a1a1a; 
+    border-radius: 50%;
+    position: absolute;
+    left: 3.4px; 
+    transform: translate(-50%, -50%);
+    bottom: 39.9px; 
+}
+
+.middle-circle {
+    width: 3px; 
+    height: 3px; 
+    background-color: #1a1a1a; 
+    border-radius: 50%; 
+    position: absolute;
+    left: 1.6px; 
+    transform: translate(-50%, -50%);
+    bottom: 40.9px; 
+}
+
+.middle-back-circle {
+    width: 4px; 
+    height: 4px; 
+    background-color: #1a1a1a; 
+    border-radius: 50%; 
+    position: absolute;
+    left: 1.8px; 
+    transform: translate(-50%, -50%);
+    bottom: 42px; 
+   
+}
+
+

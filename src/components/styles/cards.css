@@ -1,0 +1,103 @@
+.card {
+  background-color: #333; 
+  color: white;
+  height: 300px; 
+}
+
+.map-container {
+  height: 300px; 
+}
+
+.card-body {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between; 
+  height: 100%; 
+  text-align: left; 
+  padding: 15px; 
+}
+
+.card-title {
+  margin-bottom: 20px; 
+}
+
+.device-info {
+  flex-grow: 1; 
+}
+
+
+.device-info > div {
+  margin-bottom: 20px; 
+}
+
+.card-label {
+  font-size: 20px; 
+}
+
+
+@media (max-width: 992px) {
+  
+  .card-body {
+    font-size: 16px; 
+    padding: 10px; 
+  }
+
+  .card-label {
+    font-size: 18px; 
+  }
+
+  .card-title {
+    font-size: 20px; 
+  }
+}
+
+@media (max-width: 768px) {
+ 
+  .card {
+    height: auto; 
+  }
+
+  .card-body {
+    font-size: 14px; 
+    padding: 8px; 
+  }
+
+  .card-title {
+    font-size: 18px; 
+    margin-bottom: 15px; 
+  }
+
+  .card-label {
+    font-size: 16px; 
+  }
+
+  .device-info > div {
+    margin-bottom: 15px; 
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .map-container, .card {
+    height: auto; 
+  }
+
+  .card-body {
+    font-size: 12px; 
+    padding: 5px; 
+  }
+
+  .card-title {
+    font-size: 16px; 
+    margin-bottom: 12px; 
+  }
+
+  .card-label {
+    font-size: 14px; 
+    margin-top: 10px; 
+  }
+
+  .device-info > div {
+    margin-bottom: 12px; 
+  }
+}
