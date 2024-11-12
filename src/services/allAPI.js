@@ -4,7 +4,6 @@ import { commonAPI } from "./commonAPI";
 
 
 const API_KEY = process.env.REACT_APP_API_KEY;
-console.log("apikey",API_KEY)
 
 
 // default login
