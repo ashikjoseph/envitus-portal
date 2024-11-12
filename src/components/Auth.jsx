@@ -8,7 +8,7 @@ import { loginApi } from '../services/allAPI';
 
 function Auth() {
   const [showPassword, setShowPassword] = useState(false);
-  const [userData, setUserData] = useState({ email: 'demouser1', password: 'D@mo!24#' });
+  const [userData, setUserData] = useState({ username: 'demouser1', password: 'D@mo!24#' });
   const navigate = useNavigate();
 
   const togglePasswordVisibility = () => {
@@ -17,10 +17,10 @@ function Auth() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-    const { email, password } = userData;
+    const { username, password } = userData;
 
     // Check if fields are filled
-    if (!email || !password) {
+    if (!username || !password) {
       Swal.fire({
         icon: 'warning',
         title: 'Incomplete Form',
@@ -44,7 +44,7 @@ function Auth() {
         confirmButtonColor: '#3085d6',
       });
 
-      setUserData({ email: "", password: "" });
+      setUserData({ username: "", password: "" });
       navigate('/dashboard');
     } else {
       Swal.fire({
@@ -79,7 +79,7 @@ function Auth() {
           </div>
 
           <Form>
-            <Form.Group controlId="email" className="mb-3">
+            <Form.Group controlId="username" className="mb-3">
               <Form.Label style={{color:"#666666"}}>Username</Form.Label>
               <Form.Control type="text" defaultValue="demouser1"
                  style={{backgroundColor:"#f2f2f2", height:"55px", fontSize:"20px", padding: '10px'}} />
